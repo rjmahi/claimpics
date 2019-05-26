@@ -1,0 +1,69 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: "Whitney-Medium";
+    src: url("/assets/fonts/Whitney-Medium-Bas.otf") format("truetype");
+    font-weight:normal;
+    font-style: normal;
+   }
+   @font-face {
+     font-family: "Whitney-Medium";
+     src: url("/assets/fonts/Whitney-Semibold-Bas.otf") format("truetype");
+     font-weight:bold;
+     font-style: normal;
+   }
+
+.page-content {
+    margin-top: 72px;
+   
+}
+.orange-btn {
+    width: 100%;
+    text-transform: none;
+    color: #fff;
+    background-color: #ff6319;
+    border-radius: 4px;
+    height: 2.2em;
+    font-size: 1.4rem;
+    border-color: #ff6319;
+    margin: .4rem .2rem;
+    padding: 0 1em;
+}
+.loader {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 1000;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    contain: strict;
+background-color: rgba(0,0,0,.3);
+    .spinner {
+        border-radius: 8px;
+        max-width: 270px;
+         color: #000;
+        background: #f8f8f8;
+        padding: 24px 34px;
+        font-size: 13px;
+        
+        .text {
+            margin-left: 15px;
+        }
+    }
+}
+
+.error {
+    color:red;
+}

@@ -1,0 +1,65 @@
+.carangles-page {
+    font-family: 'Whitney-Medium', 'Whitney Medium', 'Whitney';
+    color:#4D4D4F;
+    padding: 15px;
+    .frame-margin {
+        margin: -20px -30px 20px -30px;
+        text-align: center;
+        img {
+            max-width: 100%;
+        }
+     }
+     .camera-main {
+        text-align: center;
+     }
+     .camera-div {
+        text-align: center;
+        border: 1px dashed #007ac9;
+        padding-top: 33px;
+        padding-bottom: 25px;
+        width: 150px;
+        height: 130px;
+       
+        img {
+            height:65px;
+            width:65px;
+        }
+        input {
+            max-width: 100%;
+        }
+        }
+        .camera-label {
+            margin: 0 auto;
+        }
+        .bottom-text {
+            margin-left: -30px;
+    margin-right: -30px;
+    margin-top: 20px;
+    background-color: #74B1E6;
+    justify-content: center;
+    padding: 18px;
+            .tip{
+            color:#fff;
+            opacity:0.75;
+             line-height: 30px;
+            font-size: 20px;
+             margin-top: 6px;
+             font-weight: normal;
+             text-align: -webkit-left;
+             
+            } 
+             .title {
+                 font-size: 22px;
+                 font-weight: bold;
+                 margin-bottom: 0px; 
+                 color:#fff;
+                 line-height: 28px;
+                text-align: center;
+                margin-top: 5px;
+                margin-bottom: 5px;
+             }
+            .empty-div {
+                height:50px;
+            }
+         }
+}

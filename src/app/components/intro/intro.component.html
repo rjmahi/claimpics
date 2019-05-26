@@ -1,0 +1,27 @@
+<div class="container  page-content">
+  <div class="intro-page">
+    <div class="row">
+      <p class="quick-tips">Welcome to CarPics!</p>
+    </div>
+
+    <div class="row title-row">
+      <p class="tips">Here’s how our program works:</p>
+      <ol>
+        <li>Ensure your vehicle is in a safe, well-lit area </li>
+        <li>We’ll guide you through the process to take and submit photos using your phone</li>
+        <li>We’ll then review the photos, complete an estimate of your vehicle’s damage, and contact you with the next steps</li>
+      </ol>
+      <p class="tips">It’s that easy!</p>
+    </div>
+    <div class="row">
+      <button (click)="goToNextPage()" type="button" class="btn btn-primary orange-btn">Got it</button>
+    </div>
+  </div>
+
+</div>
+<div *ngIf="showSpinner" class="loader">
+  <div class="spinner">
+    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+    <span class="text">Gathering Claim Information..</span>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-md navbar-dark  fixed-top header">
+  <div class="col-sm-12 col-xs-12">
+    <img class="logo" src="assets/imgs/logo-mobile.png">
+  </div>
+
+</nav>
+
+
+<router-outlet>
+
+</router-outlet>
+
+<div *ngIf="showAlertModal" class="loader">
+  <div class="modal" tabindex="-1" role="dialog" style="display: block; top: 33%;">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" style="font-size: 18px">You have already submitted your photos!</h5>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary ok-btn" (click)="alertSubmitConfirmed( )">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div *ngIf="showSessionAlertModal" class="loader">
+  <div class="modal" tabindex="-1" role="dialog" style="display: block; top: 33%;">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" style="font-size: 18px">Your session has expired. Please start over from the beginning.</h5>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary ok-btn" (click)="alertSessionConfirmed( )">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

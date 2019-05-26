@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Plymouth Rock CarPics</title>
+  <script>document.write('<base href="' + document.location + '" />');</script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="assets/icon/favicon.gif">
+</head>
+
+<body>
+  <app-root></app-root>
+</body>
+
+<script type="text/javascript">
+
+  if (typeof FS != 'undefined') {
+
+    var claimNumber = sessionStorage.getItem('claimNumber');
+    var id = sessionStorage.getItem('id');
+
+    if (!claimNumber && !id) {
+
+      id = getParamsByName("id");
+      claimNumber = getParamsByName("c");
+    }
+
+    FS.identify('CarPics ' + claimNumber + '#' + id, {
+      displayName: 'CarPics ' + claimNumber + '#' + id
+    })
+  }
+
+  function getParamsByName(paramName) {
+
+    var url = location.href;
+    var urlObj = new URL(url);
+    var param = urlObj.searchParams.get(paramName);
+    return param;
+
+  }
+</script>
+
+</html>

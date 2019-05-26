@@ -1,0 +1,110 @@
+.selection-page {
+    font-family: 'Whitney-Medium', 'Whitney Medium', 'Whitney';
+    color:#4D4D4F;
+    padding: 15px;
+    .row {
+        justify-content: center;
+        margin-left: -10px;
+       margin-right: -10px;
+    }
+    .car-image {
+        img{
+            max-width:100%;
+        }
+    .col-xs-6 {
+        max-width: 50%;
+    }
+    .col-xs-4 {
+        max-width: 33.3%; 
+    }
+    }
+    .car-title {
+        font-size: 20px;
+        color: #4D4D4F;
+        margin-bottom: 20px;
+        margin-top: 5px;
+        line-height: 25px
+       
+    }
+    .text-desc {
+    font-size: 16px;
+    }
+
+.description {
+    border-bottom: solid 0.5px #cccc;
+   p{
+    margin-bottom: 10px;
+    margin-top: 10px;
+   }
+    .blue {
+    color: #007ac9;
+    font-size: 20px;
+    text-decoration: underline;
+     }
+     #damageex {
+         font-size: 16px;
+         text-decoration: none;
+     }
+    .green{
+        color: #b9d538;
+        cursor: pointer; 
+        font-size: 20px;
+       
+    }
+    ion-icon {
+    font-size: 2.5em;
+    font-weight: bolder;
+    color: #b9d538;
+    }
+
+}
+.last {
+    border-bottom: none;
+    justify-content: left;
+}
+.last-row {
+    justify-content: left;
+}
+.other-damage {
+    font-size: 18px;
+    margin-bottom: 2px;
+   
+}
+textarea {
+    width:100%;
+    border:solid 1px #cccc;
+    margin-top:10px;
+    margin-bottom: 10px;
+    margin-left: -15px;
+}
+ion-icon {
+    line-height: 25px;
+}
+.modal-header {
+    border-bottom: none;
+    padding: 15px;
+
+    h5 {
+        font-size: 18px;
+    }
+}
+.modal-body {
+   
+    padding: 0px 0px 0px 15px;
+}
+.modal-footer{
+    border-top: none;
+    button {
+        width:45%;
+    }
+    .btn-primary {
+        background-color: #ff6319;
+        border-color: #ff6319;
+    }
+}
+.modal-footer>:not(:last-child) {
+    margin-right: 20px;
+    display: inline-block;
+}
+
+}

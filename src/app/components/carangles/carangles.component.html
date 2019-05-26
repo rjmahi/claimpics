@@ -1,0 +1,32 @@
+<div class="container  page-content">
+  <div class="carangles-page">
+    <div class="frame-margin car-thumb">
+      <img *ngIf="bgc_image" src="assets/imgs/{{bgc_image}}.png">
+    </div>
+    <p *ngIf="uploadErrorMsg" class="error"> {{uploadErrorMsg}}</p>
+    <div class="camera-main">
+      <label class="camera-label" for="photoImage">
+        <div class="camera-div center-block">
+          <img src="assets/imgs/camera_icon.png" />
+          <input id="photoImage" style="visibility:hidden;" (change)="onAngleChange($event)" type="file" accept="image/*" capture='camera'>
+        </div>
+      </label>
+    </div>
+    <div class="row bottom-text">
+      <div>
+        <p class="title">{{title_text}}</p>
+      </div>
+      <div>
+        <p class="tip">{{tip_text}}</p>
+      </div>
+      <div class="empty-div"></div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="showSpinner" class="loader">
+  <div class="spinner">
+    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+    <span class="text">Uploading a Photo....</span>
+  </div>
+</div>

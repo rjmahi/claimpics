@@ -1,0 +1,30 @@
+.header {
+    background-color: #007ac9;
+     
+     .logo {
+    height: 60px;
+    max-width: 100%;
+    padding: 7px;
+     } 
+    }
+.ok-btn {
+    background-color: #ff6319;
+    border-color:#ff6319;
+    width: 50%;
+    margin-right: 25%; 
+}
+.modal-header {
+    border-bottom: none;
+    padding: 15px;
+
+    h5 {
+        font-size: 18px;
+    }
+}
+.modal-body {
+   padding: 0px 0px 0px 10px;
+   p{
+       padding-left: 15px;
+   }
+   border:none;
+}

@@ -1,0 +1,86 @@
+<div class="container  page-content">
+  <div class="selection-page">
+    <div class="row">
+      <p class="car-title">Please click on the image below to indicate the area(s) where your vehicle was damaged as a result
+        of this loss:</p>
+    </div>
+    <div class="row car-image">
+      <div class="row">
+        <div class="col-xs-12">
+          <img (click)="changeColor(1)" src="assets/imgs/dmg_car_{{color1}}_01.gif" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6">
+          <img (click)="changeColor(2)" src="assets/imgs/dmg_car_{{color2}}_02.gif" />
+        </div>
+        <div class="col-xs-6">
+          <img (click)="changeColor(3)" src="assets/imgs/dmg_car_{{color3}}_03.gif" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4">
+          <img (click)="changeColor(4)" src="assets/imgs/dmg_car_{{color4}}_04.gif" />
+        </div>
+        <div class="col-xs-4">
+          <img (click)="changeColor(5)" src="assets/imgs/dmg_car_{{color5}}_05.gif" />
+        </div>
+        <div class="col-xs-4">
+          <img (click)="changeColor(6)" src="assets/imgs/dmg_car_{{color6}}_06.gif" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6">
+          <img (click)="changeColor(7)" src="assets/imgs/dmg_car_{{color7}}_07.gif" />
+        </div>
+        <div class="col-xs-6">
+          <img (click)="changeColor(8)" src="assets/imgs/dmg_car_{{color8}}_08.gif" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <img (click)="changeColor(9)" src="assets/imgs/dmg_car_{{color9}}_09.gif" />
+        </div>
+      </div>
+
+
+    </div>
+    <div class="row description last">
+
+      <div class="col-12">
+        <p (click)="changeColor(10)" class={{color10}}>Other Damages</p>
+        <p (click)="changeColor(10)" id="damageex" class={{color10}}>(ex. wheels, tires, undercarriage etc.)</p>
+      </div>
+    </div>
+
+    <div class="row last" *ngIf="color10=='green'">
+      <div class="col-12">
+        <p class="other-damage">Other Damage Details</p>
+      </div>
+      <div class="col-12">
+        <textarea (change)="doTextareaValueChange($event)" rows="3" ng-maxlength="800"></textarea>
+      </div>
+    </div>
+
+    <div class="row">
+      <button type="button" class="btn btn-primary orange-btn" (click)="goTotakephotos()">Start taking photos</button>
+    </div>
+    <div *ngIf="showAlertModal" class="loader">
+      <div class="modal" tabindex="-1" role="dialog" style="display: block; top: 33%;">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">You have not selected any items</h5>
+            </div>
+            <div class="modal-body">
+              <p>Wish to Continue ?</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" (click)="alertConfirmed('Y')">Confirm</button>
+              <button type="button" class="btn btn-secondary" (click)="alertConfirmed('N')">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
